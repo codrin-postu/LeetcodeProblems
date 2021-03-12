@@ -2,10 +2,21 @@ package net.withur;
 
 import java.util.Arrays;
 
+/*
+I am aware that some of the classes have very long names. I just want to keep the names close to the problem titles
+to search for them easier on leetCode.
+ */
+
 public class Main {
 
     public static void main(String[] args) {
-        ReverseIntegerData();
+        LongestSubstrNoRepChData();
+    }
+
+    private static void LongestSubstrNoRepChData() {
+        String input = "abcabdcbb";
+        LongestSubstringNoRepeatCharSolution problem = new LongestSubstringNoRepeatCharSolution();
+        System.out.println(problem.lengthOfLongestSubstring(input));
     }
 
     private static void ReverseIntegerData() {
