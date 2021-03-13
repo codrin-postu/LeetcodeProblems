@@ -10,7 +10,19 @@ to search for them easier on leetCode.
 public class Main {
 
     public static void main(String[] args) {
-        LongestSubstrNoRepChData();
+        TrappingRainWaterData();
+    }
+
+    private static void TrappingRainWaterData() {
+        int[] height = {0,2,1};
+        var problem = new TrappingRainWater();
+        System.out.println(problem.trap(height));
+    }
+
+    private static void ContainerMostWaterData() {
+        int[] input = {4, 3 , 2, 1, 4};
+        var problem = new ContainerMostWater();
+        System.out.println(problem.maxArea(input));
     }
 
     private static void LongestSubstrNoRepChData() {
