@@ -1,6 +1,7 @@
 package net.withur;
 
 import java.util.Arrays;
+import java.util.List;
 
 /*
 I am aware that some of the classes have very long names. I just want to keep the names close to the problem titles
@@ -10,7 +11,28 @@ to search for them easier on leetCode.
 public class Main {
 
     public static void main(String[] args) {
-        TrappingRainWaterData();
+        FourSumData();
+    }
+
+    private static void FourSumData() {
+        int[] nums = {1,0,-1,0,-2,2};
+        var problem = new FourSum();
+        var target = 0;
+        List<List<Integer>> results = problem.fourSum(nums, target);
+        for (List<Integer> result: results
+        ) {
+            System.out.println(result);
+        }
+    }
+
+    private static void ThreeSumData() {
+        int[] nums = {-1, 0, 1, 2, -1, -4};
+        ThreeSum problem = new ThreeSum();
+        List<List<Integer>> results = problem.threeSum(nums);
+        for (List<Integer> result: results
+             ) {
+            System.out.println(result);
+        }
     }
 
     private static void TrappingRainWaterData() {
