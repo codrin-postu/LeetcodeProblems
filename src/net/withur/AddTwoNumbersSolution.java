@@ -4,7 +4,7 @@ public class AddTwoNumbersSolution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode current = new ListNode();
         ListNode origin = current;
-        int i, j, carry = 0;
+        int carry = 0;
         while(l1 != null || l2 != null || carry != 0) {
             int sum = 0;
             if (l1 != null) {
