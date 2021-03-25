@@ -11,7 +11,13 @@ to search for them easier on leetCode.
 public class Main {
 
     public static void main(String[] args) {
-        FourSumData();
+        PalindromeNumberData();
+    }
+
+    private static void PalindromeNumberData() {
+        int number = 2;
+        var problem = new PalindromeNumber();
+        System.out.println(problem.isPalindrome(number));
     }
 
     private static void FourSumData() {
