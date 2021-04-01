@@ -11,7 +11,13 @@ to search for them easier on leetCode.
 public class Main {
 
     public static void main(String[] args) {
-        PalindromeNumberData();
+        LongestCommonPrefixData();
+    }
+
+    private static void LongestCommonPrefixData() {
+        String[] strs = {"ab", "a"};
+        var problem = new LongestCommonPrefix();
+        System.out.println(problem.longestCommonPrefix(strs));
     }
 
     private static void PalindromeNumberData() {
